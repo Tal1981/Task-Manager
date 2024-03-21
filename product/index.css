@@ -198,7 +198,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 /**
@@ -290,7 +290,7 @@ textarea {
  */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
+  appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -388,7 +388,7 @@ header {
   height: fit-content;
   padding: 5px 30px;
   box-shadow: 0 1px 12px 4px #666;
-  background: url(/b4ec0f48a37843e5534b.png) rgba(93, 93, 253, 0.4) no-repeat;
+  background: url(b4ec0f48a37843e5534b.png) rgba(93, 93, 253, 0.4) no-repeat;
   background-size: cover;
   background-blend-mode: hue;
   z-index: 100;
@@ -420,7 +420,7 @@ body.dark-mode header p {
 body.dark-mode header {
   background-color: #43436e;
   background-blend-mode: difference;
-  background: url(/e882730761d14cb2a7de.png) rgba(93, 93, 253, 0.4) no-repeat !important;
+  background: url(e882730761d14cb2a7de.png) rgba(93, 93, 253, 0.4) no-repeat !important;
   background-size: cover !important;
   background-blend-mode: darken !important;
 }
@@ -502,7 +502,7 @@ main#content {
 }
 main#content #leftSide {
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url(/903036ce1fc32908a40d.png);
+  background-image: url(903036ce1fc32908a40d.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -564,7 +564,7 @@ main#content #leftSide #formAddNewTask button:hover {
 }
 body.dark-mode #leftSide {
   background-color: transparent !important;
-  background-image: url(/5263a75a2de171bb4240.png);
+  background-image: url(5263a75a2de171bb4240.png);
   background-blend-mode: difference;
 }
 body.dark-mode #leftSide #formAddNewTask h3 {
@@ -821,7 +821,7 @@ body.dark-mode .card-bottom .date {
   width: 30%;
   height: 100%;
   z-index: -1;
-  background-image: url(/826be95a2bc462b8ad97.gif);
+  background-image: url(826be95a2bc462b8ad97.gif);
   background-repeat: space;
   opacity: 0.2;
 }
@@ -833,7 +833,7 @@ body.dark-mode .card-bottom .date {
   width: 30%;
   height: 100%;
   z-index: -1;
-  background-image: url(/826be95a2bc462b8ad97.gif);
+  background-image: url(826be95a2bc462b8ad97.gif);
   background-repeat: space;
   opacity: 0.2;
 }
@@ -955,7 +955,7 @@ body.dark-mode .card-bottom .date {
   position: absolute;
   left: 1px;
   top: 1px;
-  background-image: url(/b29f6d7879399da87181.png);
+  background-image: url(b29f6d7879399da87181.png);
   background-repeat: no-repeat;
   background-position: center;
 }
