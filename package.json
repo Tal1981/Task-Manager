@@ -12,7 +12,7 @@
     "format": "prettier --write ./**/*.js",
     "lint": "eslint ./**/*.js",
     "lint:fix": "eslint ./**/*.js --fix",
-    "watch": "nodemon server.js"
+    "start": "nodemon product/main.js"
   },
   "author": "Talal",
   "license": "ISC",
