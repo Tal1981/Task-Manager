@@ -2,7 +2,7 @@
   "name": "task_manager",
   "version": "1.0.0",
   "description": "task management web application",
-  "main": "backend/src/server.js",
+  "main": "product/main.js",
   "private": "true",
   "scripts": {
     "babel": "babel backend/src --out-dir dist",
