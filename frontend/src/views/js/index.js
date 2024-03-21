@@ -1,5 +1,6 @@
 import "../style/normalize.css";
 import "../style/index.css";
+const API_address = "https://task-manager-na0w.onrender.com/"; //* http://localhost:8000/
 const formAddNewTask = document.querySelector("#formAddNewTask");
 const newTask = document.querySelector("#taskName");
 const alertNewTask = document.querySelector("#alertNewTask");
@@ -42,7 +43,7 @@ const showTasks = async (param1, param2) => {
   try {
     const {
       data: { tasks },
-    } = await axios.get("http://localhost:8000/");
+    } = await axios.get(API_address);
     if (tasks.length < 1) {
       showLoading.style.setProperty("visibility", "hidden");
       allCount.innerHTML = 0;
@@ -144,7 +145,7 @@ tasksBox.addEventListener("click", async (event) => {
     try {
       showLoading.style.setProperty("visibility", "visible");
       const id = event.target.parentElement.dataset.id;
-      await axios.delete(`http://localhost:8000/${id}`);
+      await axios.delete(`${API_address}${id}`);
 
       WichActiveList();
     } catch (error) {
@@ -162,7 +163,7 @@ tasksBox.addEventListener("click", async (event) => {
 formAddNewTask.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
-    await axios.post("http://localhost:8000/", { name: newTask.value });
+    await axios.post(API_address, { name: newTask.value });
     WichActiveList();
     alertNewTask.innerText = "Success, task added";
     newTask.value = "";

@@ -34,7 +34,7 @@ const showTask = async () => {
   try {
     const {
       data: { task },
-    } = await axios.get(`http://localhost:8000/${id}`);
+    } = await axios.get(`${API_address}${id}`);
     const { name, completed } = task;
     taskID.innerText = id;
     taskName.value = name;
@@ -54,7 +54,7 @@ formEditTask.addEventListener("submit", async (event) => {
   const newName = taskName.value;
   const newCompleted = isCompleted.checked;
   try {
-    await axios.patch(`http://localhost:8000/${id}`, {
+    await axios.patch(`${API_address}${id}`, {
       name: newName,
       completed: newCompleted,
     });
