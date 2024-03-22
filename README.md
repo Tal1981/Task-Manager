@@ -18,7 +18,7 @@ Programming and script languages used on the website:
 |*JS*|*CSS*|*SASS*|
 |---|---|---|
 
-> :bulb: With &rarr; ***Task Manager***, By keeping such a list, you make sure that your tasks are written down all in one place so you don't forget anything important. And by prioritizing tasks, you plan the order in which you'll do them, so that you can tell what needs your immediate attention, and what you can leave until later.
+> :bulb: With &rarr; ***Task Manager***, you make sure that your tasks are written down all in one place so you don't forget anything important. And by prioritizing tasks, you plan the order in which you'll do them, so that you can tell what needs your immediate attention, and what you can leave until later.
 
 You can visit the website just [click here](https://tal1981.github.io/Task-Manager/)
 
