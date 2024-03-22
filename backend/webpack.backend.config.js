@@ -4,9 +4,10 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
    mode: 'production',
-   entry: './dist/server.js',
+   devtool: 'source-map',
+   entry: './backend/src/server.js',
    output: {
-      path: path.resolve(__dirname, 'product'),
+      path: path.resolve(__dirname, '../product'),
       filename: '[name].js',
    },
    module: {
@@ -18,16 +19,16 @@ module.exports = {
                {
                   loader: 'babel-loader',
                   options: {
-                     presets: [['@babel/preset-env', { targets: "defaults" }]]
+                     presets: [['@babel/preset-env']]
                   },
                },
             ],
          },
       ],
    },
-   plugins: [
-      new Dotenv()
-   ],
+   // plugins: [
+   //    new Dotenv()
+   // ],
    resolve: {
       extensions: ['.js'],
    },

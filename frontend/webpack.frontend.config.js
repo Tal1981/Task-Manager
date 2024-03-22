@@ -15,7 +15,7 @@ module.exports = {
    output: {
       path: path.resolve(__dirname, '../product'),
       filename: '[name].js',
-      "publicPath": "/",
+      "publicPath": "",
    },
    module: {
       rules: [
@@ -54,11 +54,11 @@ module.exports = {
          filename: 'edit.html',
          chunks: ['edit'],
       }),
-      // new CopyWebpackPlugin({
-      //    patterns: [
-      //       { from: './frontend/src/public', to: './public' },
-      //    ],
-      // }),
+      new CopyWebpackPlugin({
+         patterns: [
+            { from: './frontend/src/public', to: '../product/public' },
+         ],
+      }),
       new MiniCssExtractPlugin({
          filename: 'index.css',
       }),
@@ -66,5 +66,6 @@ module.exports = {
    resolve: {
       extensions: ['.js'],
    },
+   target: 'web',
    externals: [nodeExternals()],
 };
