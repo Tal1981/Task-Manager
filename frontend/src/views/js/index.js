@@ -1,6 +1,6 @@
 import "../style/normalize.css";
 import "../style/index.css";
-const API_address = "https://task-manager-na0w.onrender.com/"; //* http://localhost:8000/
+const API_address = "https://task-manager-na0w.onrender.com/";
 const formAddNewTask = document.querySelector("#formAddNewTask");
 const newTask = document.querySelector("#taskName");
 const alertNewTask = document.querySelector("#alertNewTask");

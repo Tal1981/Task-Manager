@@ -1,6 +1,6 @@
 import "../style/normalize.css";
 import "../style/index.css";
-const API_address = "https://task-manager-na0w.onrender.com/"; //* http://localhost:8000/
+const API_address = "https://task-manager-na0w.onrender.com/";
 const darkModeToggle = document.querySelector("#darkModeToggle");
 const formEditTask = document.querySelector("#formEditTask");
 const taskID = document.querySelector("#taskID");
